@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+    background-color: #333;
+    font-size: 66.5%;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: uppercase;
+    background-image: url('../tree-736885.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 450px;
+        padding: 20px 40px;
+        color: #fff;
+        position: relative;
+        background-color: transparent;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, .55);
+        h2 {
+            font-size: 3rem;
+            color: white;
+            color: rgba(255, 255, 255, .9);
+            text-align: center;
+        }
+    }
+    &__inputbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        input {
+            height: 50px;
+            width: 100%;
+            margin-top: 50px;
+            font-size: 2rem;
+            padding-left: 40px;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .55);
+            outline: none;
+            background-color: transparent;
+            color: white;
+        }
+        i {
+            position: absolute;
+            bottom: 1.2em;
+            left: 0.5em;
+            font-size: 1.5em;
+            color: white;
+        }
+        label {
+            position: absolute;
+            top: 2.5em;
+            font-size: 1.2em;
+            left: 3em;
+        }
+        &-checkbox {
+            text-transform: none;
+            margin-top: 2em;
+            font-size: 1.2em;
+        }
+    }
+    button {
+        position: relative;
+        margin-top: 3em;
+        width: 100%;
+        height: 50px;
+        border-radius: 3rem;
+        color: white;
+        text-transform: uppercase;
+        border: 1px solid rgba(255, 255, 255, .9);
+        background: transparent;
+        cursor: pointer;
+        transition: .3s;
+        overflow: hidden;
+    }
+    button::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 150%;
+        top: -5px;
+        left: -300px;
+        background-color: rgba(255, 255, 255, .55);
+        transition: left .5s;
+        transform: translateX(45deg);
+    }
+    button:hover::before {
+        left: 1000px;
+    }
+    p {
+        margin-top: 30px;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: white;
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__signup {
+        text-transform: none;
+        font: 1rem sans-serif;
+        font-weight: bold;
+    }
+}

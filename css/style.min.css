@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "poppins", sans-serif;
+  background-color: #333;
+  font-size: 66.5%;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-transform: uppercase;
+  background-image: url("../tree-736885.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 450px;
+  padding: 20px 40px;
+  color: #fff;
+  position: relative;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+.login form h2 {
+  font-size: 3rem;
+  color: white;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.login__inputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.login__inputbox input {
+  height: 50px;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 2rem;
+  padding-left: 40px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+.login__inputbox i {
+  position: absolute;
+  bottom: 1.2em;
+  left: 0.5em;
+  font-size: 1.5em;
+  color: white;
+}
+.login__inputbox label {
+  position: absolute;
+  top: 2.5em;
+  font-size: 1.2em;
+  left: 3em;
+}
+.login__inputbox-checkbox {
+  text-transform: none;
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+.login button {
+  position: relative;
+  margin-top: 3em;
+  width: 100%;
+  height: 50px;
+  border-radius: 3rem;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.login button::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 150%;
+  top: -5px;
+  left: -300px;
+  background-color: rgba(255, 255, 255, 0.55);
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+  -webkit-transform: translateX(45deg);
+          transform: translateX(45deg);
+}
+.login button:hover::before {
+  left: 1000px;
+}
+.login p {
+  margin-top: 30px;
+  text-align: center;
+}
+.login p a {
+  text-decoration: none;
+  color: white;
+}
+.login p a a:hover {
+  text-decoration: underline;
+}
+.login__signup {
+  text-transform: none;
+  font: 1rem sans-serif;
+  font-weight: bold;
+}/*# sourceMappingURL=style.min.css.map */
